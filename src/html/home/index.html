@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+<meta charset="UTF-8">
+<meta name="viewport" content="minimal-ui,width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="no">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Winsure</title>
+
+<link type="text/css" rel="stylesheet" href="../../css/sprite.min.css">
+<link type="text/css" rel="stylesheet" href="../../css/home.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script src="../../js/main.js"></script>
+
+<!-- select2 미사용 시 제외 -->
+
+<!-- 페이지별 스타일 지정 시 주석 제거 / style.css 제외 가능 -->
+<!-- <link type="text/css" rel="stylesheet" href="../../css/home.css" /> -->
+
+
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/0.3.6/ScrollTrigger.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function(){
+      var trigger = new ScrollTrigger();
+    });
+
+    var skrollrStart = function (){
+      var _skrollr = skrollr.get();
+      if (!_skrollr) {
+        skrollr.init({
+          constants: {
+            height: function() {
+              return $(window).height() - 60;
+            }
+          },
+          render: function(data) {
+	          // icon floating
+
+            var startContent = $('#page2').offset()
+            var contentOffset = $('#page2').find('.info-content').position()
+	          var startPoint = startContent.top + contentOffset.top-70
+            $('#phone-slider-wrap').css('top', startPoint)
+            $('#phone-slider-wrap').css('left', startContent.left + contentOffset.left+610)
+	          if(startContent.top < data.curTop+60){
+	            var contentPostion = data.curTop+60 - startContent.top;
+              $('#phone-slider-wrap').css('top', startPoint + contentPostion);
+              if(data.maxTop < data.curTop+195){
+                $('#phone-slider-wrap').css('top', $('#page4').offset().top + contentOffset.top-70);
+              }
+	          }
+
+
+	          // icon slide
+
+          }
+        })
+      }
+
+      skrollr.get().refresh()
+    }
+    $(document).ready(function() {
+      skrollrStart();
+    })
+
+    $(window).on('resize', function () {
+      skrollrStart();
+    })
+	</script>
+</head>
+<body>
+<div>
+	<header class="header">
+	<div class="header-wrap">
+		<h1 class="logo">
+			<a href="#">
+				<img src="../../images/logo.png" alt="winsure" srcset="../../images/logo.png 1x, ../../images/logo@2x.png 2x, ../../images/logo@3x.png 3x">
+			</a>
+			<span class="blind">Winsure</span>
+		</h1>
+		<nav class="main-nav">
+			<h1 class="blind">메인메뉴</h1>
+			<ul>
+				<li><a href="#">서비스 소개</a></li>
+				<li><a href="#">상품소개</a></li>
+				<li><a href="#">설계사용 서비스</a></li>
+			</ul>
+		</nav>
+		<ul class="util">
+			<li><a href="#">로그인</a></li>
+			<li class="sign-up"><a href="#">회원가입</a></li>
+			<li><a href="#">로그아웃</a></li>
+		</ul>
+	</div>
+</header>
+
+	<div class="main-content">
+		<div class="phone-slider-wrap" id="phone-slider-wrap">
+			<span class="icon-img-page-2-phone-01 slider slider1"></span>
+			<span class="icon-img-page-3-phone-01 slider slider2"></span>
+			<span class="icon-img-page-4-phone-01 slider slider3"></span>
+			<div class="slider-info">보험파트너</div>
+		</div>
+		<section class="page1 page" id="page1" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;">
+			<div class="page-wrap">
+				<div class="page-content">
+					<p class="point animated slow" data-scroll="toggle(.fadeInLeft)">인생밀착형 보험앱_윈슈어</p>
+					<p class="title animated">당신의 인생반경 안에<br>윈슈어가 있습니다</p>
+					<p class="sub-title">먼 친척보다 가까운 보험 설계사가 낫다</p>
+					<p class="detail animated">어려운 일이 생겼을 때에 가까이에서 챙겨줄 수 있는<br>인생밀착형 보험서비스를 만나보세요.</p>
+					<div class="button-wrap">
+						<button type="button" class="icon-btn-googleplay-white"></button>
+						<button type="button" class="icon-btn-appstore-white"></button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="page2 page" id="page2" data-smooth-scrolling="on">
+			<div class="page-wrap">
+				<div class="info-content">
+					<p class="point">보험 외톨이 방지앱_윈슈어</p>
+					<p class="title">더이상 보험가입 후<br>외톨이로 두지 않겠습니다</p>
+					<p class="sub-title">보험은 가입만 하면 끝인 '상품'이 아닙니다.</p>
+					<p class="detail">가입 후에도 언제나 나를 보살펴 줄 수 있는<br>긴 인생 동반형 포험 파트너의 '서비스'를 받으세요.</p>
+					<div class="button-wrap">
+						<button type="button" class="icon-btn-googleplay-white"></button>
+						<button type="button" class="icon-btn-appstore-white"></button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="page3 page" id="page3" data-smooth-scrolling="on">
+			<div class="page-wrap">
+				<div class="info-content">
+					<p class="point">맞춤 보험 비교견적_윈슈어</p>
+					<p class="title">보험회사가 아니라 당신에게<br>가장 유리하게 비교해드립니다</p>
+					<p class="sub-title">비싼 보험보다 내게 맞는 보험이 필요합니다.</p>
+					<p class="detail">보험스케치로 만나는 설계사들의 경쟁을 통해<br>당신에게 맞는 보험견적을 제시해드립니다.</p>
+					<div class="button-wrap">
+						<button type="button" class="icon-btn-googleplay-black"></button>
+						<button type="button" class="icon-btn-appstore-black"></button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="page4 page" data-10-top="background-color: #44c7f3" id="page4">
+			<div class="page-wrap">
+				<div class="info-content">
+					<p class="point">인생맞춤 보험 서비스_윈슈어</p>
+					<p class="title">인생의 어려움을<br>이기는 힘이 되겠습니다</p>
+					<p class="sub-title">어려움을 이겨내는 힘이 보험의 역할입니다.</p>
+					<p class="detail">모든 상황에 대비한 인생맞춤 보험파트너와 함께<br>내게 필요한 어떤 보험이든 만날 수 있습니다.</p>
+					<div class="button-wrap">
+						<button type="button" class="icon-btn-googleplay-white"></button>
+						<button type="button" class="icon-btn-appstore-white"></button>
+					</div>
+				</div>
+			</div>
+
+		</section>
+	</div>
+	<footer class="footer">
+	<div class="footer-wrap">
+		<address class="company-address">
+			<strong>(주)윈슈어</strong>
+			<p>서울시 강남구 논현로 151길 16 301호</p>
+			<ul class="info">
+				<li>
+					대표이사 : 양현
+				</li>
+				<li>
+					개인정보보호책임자 : 이준혁
+				</li>
+			</ul>
+			<ul class="info">
+				<li>
+					사업자 등록번호 : 307-86-01428
+				</li>
+				<li>
+					통신판매업신고 : 제 2019-서울강남-03269
+				</li>
+			</ul>
+			<ul class="info">
+				<li>
+					고객센터 : 02-511-7537
+				</li>
+				<li>
+					이메일 : cs@winsure.co.kr
+				</li>
+			</ul>
+		</address>
+		<div class="terms">
+			<ul class="info">
+				<li><a href="#">서비스 이용약관</a></li>
+				<li><a href="#">개인정보 처리방침</a></li>
+				<li><a href="#">기타 약관</a></li>
+			</ul>
+		</div>
+		<small class="copy">Copyright &copy; Itsure Inc. AllRights Reserved.</small>
+	</div>
+</footer>
+
+</div>
+</body>
+</html>

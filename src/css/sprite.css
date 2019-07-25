@@ -1,0 +1,322 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-btn-add {
+  background-image: url(../images/sprite.png);
+  background-position: -1166px -504px;
+  width: 105px;
+  height: 40px;
+}
+.icon-btn-appstore-black {
+  background-image: url(../images/sprite.png);
+  background-position: -1059px -711px;
+  width: 170px;
+  height: 50px;
+}
+.icon-btn-appstore-white {
+  background-image: url(../images/sprite.png);
+  background-position: -1059px -761px;
+  width: 170px;
+  height: 50px;
+}
+.icon-btn-down {
+  background-image: url(../images/sprite.png);
+  background-position: -1224px -544px;
+  width: 58px;
+  height: 58px;
+}
+.icon-btn-googleplay-black {
+  background-image: url(../images/sprite.png);
+  background-position: -1059px -611px;
+  width: 170px;
+  height: 50px;
+}
+.icon-btn-googleplay-white {
+  background-image: url(../images/sprite.png);
+  background-position: -1059px -661px;
+  width: 170px;
+  height: 50px;
+}
+.icon-btn-top {
+  background-image: url(../images/sprite.png);
+  background-position: -1166px -544px;
+  width: 58px;
+  height: 58px;
+}
+.icon-i-phone-x-clay-frontal-white {
+  background-image: url(../images/sprite.png);
+  background-position: 0px 0px;
+  width: 800px;
+  height: 1400px;
+}
+.icon-ic-point {
+  background-image: url(../images/sprite.png);
+  background-position: -1298px -560px;
+  width: 10px;
+  height: 10px;
+}
+.icon-ic-service-home {
+  background-image: url(../images/sprite.png);
+  background-position: -1271px -522px;
+  width: 16px;
+  height: 16px;
+}
+.icon-ic-star-no {
+  background-image: url(../images/sprite.png);
+  background-position: -1303px -522px;
+  width: 12px;
+  height: 12px;
+}
+.icon-ic-star {
+  background-image: url(../images/sprite.png);
+  background-position: -1305px -504px;
+  width: 12px;
+  height: 12px;
+}
+.icon-ico-delete {
+  background-image: url(../images/sprite.png);
+  background-position: -1271px -504px;
+  width: 18px;
+  height: 18px;
+}
+.icon-ico-dropdown-narrow {
+  background-image: url(../images/sprite.png);
+  background-position: -1271px -538px;
+  width: 9px;
+  height: 5px;
+}
+.icon-ico-narrow-left {
+  background-image: url(../images/sprite.png);
+  background-position: -1287px -522px;
+  width: 16px;
+  height: 16px;
+}
+.icon-ico-narrow-right-grey {
+  background-image: url(../images/sprite.png);
+  background-position: -1282px -576px;
+  width: 11px;
+  height: 17px;
+}
+.icon-ico-narrow-right {
+  background-image: url(../images/sprite.png);
+  background-position: -1298px -544px;
+  width: 16px;
+  height: 16px;
+}
+.icon-ico-replay-line {
+  background-image: url(../images/sprite.png);
+  background-position: -1308px -560px;
+  width: 8px;
+  height: 8px;
+}
+.icon-img-bronze {
+  background-image: url(../images/sprite.png);
+  background-position: -1059px -811px;
+  width: 51px;
+  height: 58px;
+}
+.icon-img-check-big {
+  background-image: url(../images/sprite.png);
+  background-position: -1059px -504px;
+  width: 107px;
+  height: 107px;
+}
+.icon-img-family {
+  background-image: url(../images/sprite.png);
+  background-position: -1262px -811px;
+  width: 50px;
+  height: 58px;
+}
+.icon-img-gold {
+  background-image: url(../images/sprite.png);
+  background-position: -1110px -811px;
+  width: 51px;
+  height: 58px;
+}
+.icon-img-page-2-phone-01 {
+  background-image: url(../images/sprite.png);
+  background-position: -800px -504px;
+  width: 259px;
+  height: 504px;
+}
+.icon-img-page-3-phone-01 {
+  background-image: url(../images/sprite.png);
+  background-position: -800px 0px;
+  width: 259px;
+  height: 504px;
+}
+.icon-img-page-4-phone-01 {
+  background-image: url(../images/sprite.png);
+  background-position: -1059px 0px;
+  width: 259px;
+  height: 504px;
+}
+.icon-img-platinum {
+  background-image: url(../images/sprite.png);
+  background-position: -1161px -811px;
+  width: 51px;
+  height: 58px;
+}
+.icon-img-silver {
+  background-image: url(../images/sprite.png);
+  background-position: -1212px -811px;
+  width: 50px;
+  height: 58px;
+}
+.icon-profile {
+  background-image: url(../images/sprite.png);
+  background-position: -1282px -544px;
+  width: 16px;
+  height: 16px;
+}
+.icon-week-left {
+  background-image: url(../images/sprite.png);
+  background-position: -1289px -504px;
+  width: 16px;
+  height: 16px;
+}
+.icon-week-right {
+  background-image: url(../images/sprite.png);
+  background-position: -1282px -560px;
+  width: 16px;
+  height: 16px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+       (min-resolution: 192dpi) {
+  .icon-btn-add {
+    background-image: url(../images/sprite@2x.png);
+    background-size: 1318px 1400px;
+  }
+  .icon-btn-appstore-black {
+    background-image: url(../images/sprite@2x.png);
+    background-size: 1318px 1400px;
+  }
+  .icon-btn-appstore-white {
+    background-image: url(../images/sprite@2x.png);
+    background-size: 1318px 1400px;
+  }
+  .icon-btn-down {
+    background-image: url(../images/sprite@2x.png);
+    background-size: 1318px 1400px;
+  }
+  .icon-btn-googleplay-black {
+    background-image: url(../images/sprite@2x.png);
+    background-size: 1318px 1400px;
+  }
+  .icon-btn-googleplay-white {
+    background-image: url(../images/sprite@2x.png);
+    background-size: 1318px 1400px;
+  }
+  .icon-btn-top {
+    background-image: url(../images/sprite@2x.png);
+    background-size: 1318px 1400px;
+  }
+  .icon-i-phone-x-clay-frontal-white {
+    background-image: url(../images/sprite@2x.png);
+    background-size: 1318px 1400px;
+  }
+  .icon-ic-point {
+    background-image: url(../images/sprite@2x.png);
+    background-size: 1318px 1400px;
+  }
+  .icon-ic-service-home {
+    background-image: url(../images/sprite@2x.png);
+    background-size: 1318px 1400px;
+  }
+  .icon-ic-star-no {
+    background-image: url(../images/sprite@2x.png);
+    background-size: 1318px 1400px;
+  }
+  .icon-ic-star {
+    background-image: url(../images/sprite@2x.png);
+    background-size: 1318px 1400px;
+  }
+  .icon-ico-delete {
+    background-image: url(../images/sprite@2x.png);
+    background-size: 1318px 1400px;
+  }
+  .icon-ico-dropdown-narrow {
+    background-image: url(../images/sprite@2x.png);
+    background-size: 1318px 1400px;
+  }
+  .icon-ico-narrow-left {
+    background-image: url(../images/sprite@2x.png);
+    background-size: 1318px 1400px;
+  }
+  .icon-ico-narrow-right-grey {
+    background-image: url(../images/sprite@2x.png);
+    background-size: 1318px 1400px;
+  }
+  .icon-ico-narrow-right {
+    background-image: url(../images/sprite@2x.png);
+    background-size: 1318px 1400px;
+  }
+  .icon-ico-replay-line {
+    background-image: url(../images/sprite@2x.png);
+    background-size: 1318px 1400px;
+  }
+  .icon-img-bronze {
+    background-image: url(../images/sprite@2x.png);
+    background-size: 1318px 1400px;
+  }
+  .icon-img-check-big {
+    background-image: url(../images/sprite@2x.png);
+    background-size: 1318px 1400px;
+  }
+  .icon-img-family {
+    background-image: url(../images/sprite@2x.png);
+    background-size: 1318px 1400px;
+  }
+  .icon-img-gold {
+    background-image: url(../images/sprite@2x.png);
+    background-size: 1318px 1400px;
+  }
+  .icon-img-page-2-phone-01 {
+    background-image: url(../images/sprite@2x.png);
+    background-size: 1318px 1400px;
+  }
+  .icon-img-page-3-phone-01 {
+    background-image: url(../images/sprite@2x.png);
+    background-size: 1318px 1400px;
+  }
+  .icon-img-page-4-phone-01 {
+    background-image: url(../images/sprite@2x.png);
+    background-size: 1318px 1400px;
+  }
+  .icon-img-platinum {
+    background-image: url(../images/sprite@2x.png);
+    background-size: 1318px 1400px;
+  }
+  .icon-img-silver {
+    background-image: url(../images/sprite@2x.png);
+    background-size: 1318px 1400px;
+  }
+  .icon-profile {
+    background-image: url(../images/sprite@2x.png);
+    background-size: 1318px 1400px;
+  }
+  .icon-week-left {
+    background-image: url(../images/sprite@2x.png);
+    background-size: 1318px 1400px;
+  }
+  .icon-week-right {
+    background-image: url(../images/sprite@2x.png);
+    background-size: 1318px 1400px;
+  }
+}
